@@ -1,0 +1,57 @@
+/* 2xl */
+@media (max-width: 1536px) {
+  body {
+    min-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  body {
+    min-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px),
+(orientation: landscape) {
+  body {
+    min-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  body {
+    min-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  body {
+    min-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  body {
+    min-width: 100%;
+  }
+
+  .framed_transitioning_image {
+    height: 30rem;
+    background-size: cover;
+  }
+
+  .title {
+    padding-inline: .5rem;
+    top: 1rem;
+    background-color: rgba(0, 0, 0, 40%);
+  }
+
+  .grid__3-column {
+    width: 85%;
+  }
+}

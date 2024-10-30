@@ -1,0 +1,74 @@
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  color: rgb(90, 90, 90);
+}
+
+/* Was modified from Josh's Custom CSS https://www.joshwcomeau.com/css/custom-css-reset/ Reset but also includes custom styling I came up with on my own
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* width fixes audio controls from overflowing container and block helps have more control for styling */
+audio {
+  display: block;
+  width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+p,
+li,
+figcaption {
+  text-wrap: pretty;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
