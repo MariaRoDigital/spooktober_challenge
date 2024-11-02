@@ -15,6 +15,30 @@
 body {
   background-color: black;
   color: hsl(0, 0%, 70%);
+  display: grid;
+  /* line-1 and line-2 are included to inclusively create a row */
+  grid-template-areas: 
+  "header"
+  "line-1"
+  "main"
+  "line-2"
+  "footer";
+  row-gap: 4rem;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  display: grid;
+  justify-items: center;
+  padding-bottom: 4rem;
 }
 
 hr {
