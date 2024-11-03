@@ -43,7 +43,7 @@ footer {
 
 hr {
   width: 50%;
-  margin: 6rem auto;
+  margin-inline: auto;
   border-color: rgb(118, 7, 5);
 }
 
