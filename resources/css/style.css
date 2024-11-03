@@ -82,6 +82,15 @@ article p {
   max-width: 68ch;
 }
 
+figure {
+  width: 75%;
+}
+
+.story {
+  display: grid;
+  row-gap: 1rem;
+}
+
 .playtime_of_the_damned {
   grid-column: span 3;
 }
