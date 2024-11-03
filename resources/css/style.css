@@ -47,21 +47,42 @@ hr {
   border-color: rgb(118, 7, 5);
 }
 
-.framed_transitioning_image {
-  height: 40rem;
-  background-position: center 40%;
+/* modify to morph into a portrait from normal to gruesome, inspired by morphing halloween portraits */
+.banner-frame {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-image: url("../images/victorian_painting_border_pattern.jpg");
+  border-image-slice: 113 82;
+  border-image-width: 6rem;
+  border-image-repeat: no-repeat;
+  height: 39rem;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-changing-img {
+  width: max(250px, 86%);
+  height: 80%;
+  box-shadow: inset 0 0 1.50rem white;
+  border-style: inset;
+  border-width: 6px;
+  border-color:
+    hsl(37, 38%, 47%) hsl(37, 47%, 75%) hsl(36, 35%, 69%) hsl(37, 38%, 47%);
+  background-size: cover;
+  background-position: center 56%;
   background-image: url("../images/header_background_gru.jpg");
 }
 
 .title {
-  height: fit-content;
   display: flex;
   justify-content: center;
-  background-color: black;
+  border-radius: 8px;
+  position: relative;
+  top: 24rem;
+  background-color: hsla(87, 31%, 64%, 0.516);
   color: hsl(1, 92%, 24%);
   font-size: var(--fluid-32-51);
-  position: relative;
-  top: 3rem;
 }
 
 .grid__3-column {
